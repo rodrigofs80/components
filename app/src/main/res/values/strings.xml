@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">Components</string>
+    <string name="ID_APP">ca-app-pub-2690524484818634~7328185592</string>
+
+    <string name="navigation_drawer_open">Menu gaveta aberto</string>
+    <string name="navigation_drawer_close">Menu gaveta fechado</string>
+    
+    <string name="top_app_bar">TopAppBar</string>
+    <string name="bottom_app_bar">BottomAppBar</string>
+
+    <!-- Menu BottomAppBarsFragment -->
+    <string name="cat_bottomappbar_3d">3D</string>
+    <string name="cat_bottomappbar_accelerator">Accelerator</string>
+    <string name="cat_bottomappbar_search">Search</string>
+    <string name="cat_bottomappbar_dashboard">Dashboard</string>
+    <string name="fab">FAB</string>
+    <string name="plane">Viagem</string>
+    <string name="music">Som</string>
+    <string name="beach">Praia</string>
+    <string name="dinheiro">Dinheiro</string>
+    <string name="pets">Pets</string>
+
+</resources>

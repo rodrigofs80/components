@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:id="@+id/dinheiro"
+      android:enabled="true"
+      android:icon="@drawable/ic_monetization_on_black_24dp"
+      android:title="@string/dinheiro"/>
+
+  <item
+      android:id="@+id/pets"
+      android:enabled="true"
+      android:icon="@drawable/ic_pets_black_24dp"
+      android:title="@string/pets"/>
+
+</menu>
