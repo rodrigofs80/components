@@ -16,6 +16,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -30,6 +31,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/image1"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         app:srcCompat="@drawable/ic_launcher_foreground"
@@ -96,6 +98,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -110,7 +113,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:id="@+id/image"
+                        android:id="@+id/image2"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         app:srcCompat="@drawable/geralt"
@@ -119,16 +122,16 @@
                         android:contentDescription="Card View"/>
 
                     <TextView
-                        android:id="@+id/titulo"
-                        android:layout_below="@+id/image"
+                        android:id="@+id/titulo2"
+                        android:layout_below="@+id/image2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Título"
                         android:textAppearance="?attr/textAppearanceHeadline6"/>
 
                     <TextView
-                        android:id="@+id/sub_titulo"
-                        android:layout_below="@+id/titulo"
+                        android:id="@+id/sub_titulo2"
+                        android:layout_below="@+id/titulo2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -137,35 +140,112 @@
                         android:textColor="?android:attr/textColorSecondary"/>
 
                     <TextView
-                        android:id="@+id/descricao"
-                        android:layout_below="@+id/sub_titulo"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/descricao2"
+                        android:layout_below="@+id/sub_titulo2"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Descrição: Uma vez Flamengo..." />
 
-                    <ImageView
-                        android:id="@+id/seta"
-                        android:layout_width="30dp"
-                        android:layout_height="25dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginRight="10dp"
-                        android:layout_below="@+id/sub_titulo"
-                        android:src="@drawable/ic_down_black_24dp"/>
-
                     <LinearLayout
-                        android:id="@+id/ll_detail"
+                        android:id="@+id/ll_detail2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/descricao2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
                         android:visibility="gone"
-                        android:layout_below="@+id/seta"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Uma vez Flamengo! Sempre Flamengo!\nFlamengo sempre eu ei de ser!\nÉ o meu maior prazer vê-lo brilha!"/>
+                            android:text="Detalhamento\n\nUma vez Flamengo! Sempre Flamengo!\nFlamengo sempre eu ei de ser!\nÉ o meu maior prazer vê-lo brilha!"/>
 
                         <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Profissão: Analista de Sistemas"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:checkable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:transitionName="myImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/geralt"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Card View"/>
+
+                    <TextView
+                        android:id="@+id/titulo3"
+                        android:transitionName="myTitulo"
+                        android:layout_below="@+id/image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Título"
+                        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+                    <TextView
+                        android:id="@+id/sub_titulo3"
+                        android:transitionName="mySubTitulo"
+                        android:layout_below="@+id/titulo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Sub Título"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"/>
+
+                    <TextView
+                        android:id="@+id/descricao3"
+                        android:transitionName="myDescricao"
+                        android:layout_below="@+id/sub_titulo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Descrição: Uma vez Flamengo..." />
+
+                    <LinearLayout
+                        android:id="@+id/ll_detail3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/descricao3"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/detalhe3"
+                            android:transitionName="myDetalhe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Detalhamento\n\nUma vez Flamengo! Sempre Flamengo!\nFlamengo sempre eu ei de ser!\nÉ o meu maior prazer vê-lo brilha!"/>
+
+                        <TextView
+                            android:id="@+id/profissao3"
+                            android:transitionName="myProfissao"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"

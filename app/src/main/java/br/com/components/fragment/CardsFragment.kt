@@ -27,14 +27,23 @@ class CardsFragment : Fragment(), OnBackPress {
         acao2.setOnClickListener {
             showToast(it.contentDescription.toString())
         }
-        seta.setOnClickListener {
-            if(ll_detail.visibility == View.GONE){
-                ll_detail.visibility = View.VISIBLE
-                seta.rotation = 180f
+        card2.setOnClickListener {
+            if(ll_detail2.visibility == View.GONE){
+                ll_detail2.visibility = View.VISIBLE
             } else {
-                ll_detail.visibility = View.GONE
-                seta.rotation = 360f
+                ll_detail2.visibility = View.GONE
             }
+        }
+        card3.setOnClickListener {
+            activity?.let {
+                it.supportFragmentManager.beginTransaction()
+                    .addSharedElement(image3,"myImage")
+                    .addSharedElement(titulo3,"myTitulo")
+                    .addSharedElement(sub_titulo3,"mySubTitulo")
+                    .addSharedElement(descricao3,"myDescricao")
+                    .addSharedElement(detalhe3,"myDetalhe")
+                    .addSharedElement(profissao3,"myProfissao")
+                    .replace(R.id.container_root, DetailCardFragment.newInstance()).addToBackStack("frag-tag").commit() }
         }
         fab_back.setOnClickListener {onBackPress()}
     }
