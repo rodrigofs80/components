@@ -10,7 +10,7 @@ class Database {
             Botao(3, "Banner"),
             Botao(4, "Bottom\nNavigation"),
             Botao(5, "Buttons"),
-            Botao(6, "Teste 6"),
+            Botao(6, "Cards"),
             Botao(7, "Teste 7"),
             Botao(8, "Teste 8")
         )

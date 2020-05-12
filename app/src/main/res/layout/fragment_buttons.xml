@@ -126,10 +126,10 @@
         android:layout_gravity="top|center_horizontal"
         android:orientation="vertical"
         android:visibility="gone"
-        android:layout_marginBottom="16dp"
         app:layout_anchor="@id/fabdial"
-        app:layout_anchorGravity="top|center_horizontal"
-        app:layout_behavior="com.google.android.material.transformation.FabTransformationScrimBehavior">
+        app:layout_anchorGravity="top|center_horizontal">
+<!--        app:layout_behavior="com.google.android.material.transformation.FabTransformationSheetBehavior"-->
+<!--        app:layout_behavior="com.google.android.material.transformation.FabTransformationScrimBehavior"-->
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab1"
@@ -137,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:contentDescription="Pets"
-            app:backgroundTint="@color/azul"
+            app:backgroundTint="@color/colorPrimary"
             android:src="@drawable/ic_pets_black_24dp"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import br.com.components.R
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.fab_back.*
 import kotlinx.android.synthetic.main.fragment_buttons.*
 import kotlinx.android.synthetic.main.fragment_buttons.view.*
@@ -39,19 +38,23 @@ class ButtonsFragment : Fragment(), OnBackPress {
         ext_fab.setOnClickListener { text_extended_fab.text = ext_fab.text }
 
         fabdial.setOnClickListener {
-            fabdial.isExpanded = !fabdial.isExpanded
+            //fabdial.isExpanded = !fabdial.isExpanded
+            dial.visibility = View.VISIBLE
         }
         fab1.setOnClickListener {
             showToast(fab1.contentDescription.toString())
-            fabdial.isExpanded = false
+            //fabdial.isExpanded = false
+            dial.visibility = View.GONE
         }
         fab2.setOnClickListener {
             showToast(fab2.contentDescription.toString())
-            fabdial.isExpanded = false
+            //fabdial.isExpanded = false
+            dial.visibility = View.GONE
         }
         fab3.setOnClickListener {
             showToast(fab3.contentDescription.toString())
-            fabdial.isExpanded = false
+            //fabdial.isExpanded = false
+            dial.visibility = View.GONE
         }
 
         fab_back.setOnClickListener {onBackPress()}

@@ -8,5 +8,5 @@
     android:layout_gravity="bottom"
     android:layout_margin="10dp"
     android:contentDescription="@string/fab"
-    android:backgroundTint="@color/colorPrimaryDark"
+    android:backgroundTint="@color/colorPrimaryVariant"
     app:srcCompat="@drawable/ic_black_24dp" />
