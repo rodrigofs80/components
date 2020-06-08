@@ -1,76 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:padding="5dp"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/image"
-        android:transitionName="myImage"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:srcCompat="@drawable/geralt"
         android:scaleType="centerCrop"
-        android:contentDescription="Card View"/>
+        android:transitionName="@string/image_description"/>
 
     <TextView
-        android:id="@+id/titulo"
-        android:transitionName="myTitulo"
-        android:layout_below="@+id/image"
-        android:layout_width="wrap_content"
+        android:transitionName="@string/titulo"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Título"
         android:textAppearance="?attr/textAppearanceHeadline6"/>
 
     <TextView
-        android:id="@+id/sub_titulo"
         android:transitionName="mySubTitulo"
-        android:layout_below="@+id/titulo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Sub Título"
+        android:layout_marginTop="8dp"
         android:textAppearance="?attr/textAppearanceBody2"
         android:textColor="?android:attr/textColorSecondary"/>
 
     <TextView
-        android:id="@+id/descricao"
         android:transitionName="myDescricao"
-        android:layout_below="@+id/sub_titulo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Descrição: Uma vez Flamengo..." />
+        android:layout_height="wrap_content"/>
 
     <TextView
-        android:id="@+id/detalhe"
-        android:transitionName="myDetalhe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/descricao"
-        android:text="Detalhamento: Uma vez Flamengo! Sempre Flamengo!\nFlamengo sempre eu ei de ser!\nÉ o meu maior prazer vê-lo brilha!"/>
+        android:transitionName="myDetalhe"/>
 
     <TextView
-        android:id="@+id/profissao"
-        android:transitionName="myProfissao"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/detalhe"
-        android:layout_marginTop="5dp"
-        android:text="Profissão: Analista de Sistemas"/>
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:transitionName="myProfissao"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="10dp"
-        android:contentDescription="@string/fab"
-        android:backgroundTint="@color/colorPrimaryVariant"
-        app:srcCompat="@drawable/ic_black_24dp" />
+    <include layout="@layout/fab_back" />
 
-</RelativeLayout>
+</LinearLayout>

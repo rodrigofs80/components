@@ -21,4 +21,7 @@
     <string name="dinheiro">Dinheiro</string>
     <string name="pets">Pets</string>
 
+    <string name="image_description">Image</string>
+    <string name="titulo">titulo</string>
+
 </resources>
