@@ -19,4 +19,8 @@
 
     <color name="background">#FAFAFA</color>
 
+    <color name="verde">#008000</color>
+    <color name="amarelo">#FFFF00</color>
+    <color name="vermelho">#B22222</color>
+
 </resources>

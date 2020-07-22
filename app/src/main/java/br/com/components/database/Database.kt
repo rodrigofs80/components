@@ -11,7 +11,7 @@ class Database {
             Botao(4, "Bottom\nNavigation"),
             Botao(5, "Buttons"),
             Botao(6, "Cards"),
-            Botao(7, "Teste 7"),
+            Botao(7, "Custom\nToast"),
             Botao(8, "Teste 8")
         )
     }

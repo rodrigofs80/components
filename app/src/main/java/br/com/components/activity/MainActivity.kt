@@ -45,6 +45,7 @@ class MainActivity() : AppCompatActivity(), OnItemListSelected {
             4 -> BottomNavigationFragment()
             5 -> ButtonsFragment()
             6 -> CardsFragment()
+            7 -> ToastFragment()
             else -> TopAppBarFragment()
         }
     }
