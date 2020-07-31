@@ -3,7 +3,9 @@ package br.com.components.database
 import br.com.components.model.Botao
 
 class Database {
+
     companion object {
+        
         fun getBotoes() = listOf(
             Botao(1, "TopAppBar"),
             Botao(2, "Bottom\nAppBar"),
